@@ -67,7 +67,7 @@ Download and install from:
 
 ### **Step 4 – Connect to a NordVPN Server**
 
-Open the NordVPN app and connect to any server.
+Open the NordVPN app and connect to your desired server.
 The script pulls the active connection info to retrieve the correct WireGuard credentials.
 
 ---
