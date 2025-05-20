@@ -95,9 +95,7 @@ try {
 # Step 6 - Get the information for the configuration file
 Write-Host "Retrieving the configuration information" 
 $listenPort = wg show NordLynx listen-port
-$publicClientKey = wg show NordLynx public-key
-
-$publicServerKey = (wg show NordLynx peers).Trim()
+$publicKey = (wg show NordLynx peers).Trim()
 
 
 $endPointRaw = wg show NordLynx endpoints
@@ -118,14 +116,13 @@ $filePath = New-Item -path $filePath -Force
 $confFileContent = @"
 [Interface]
 # Public(Client)Key is normally not needed. If there are any errors remove it!
-ListenPort = $listenPort
-PublicKey = $publicClientKey 
+ListenPort = $listenPort 
 PrivateKey =  $privateKey
 Address = 10.5.0.2/32
 DNS = 1.1.1.1
 
 [Peer]
-PublicKey = $publicServerKey
+PublicKey = $publicKey
 AllowedIPs = 0.0.0.0/0, ::/0
 Endpoint = $endPoint
 PersistentKeepalive = 25
