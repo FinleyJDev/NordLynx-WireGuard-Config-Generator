@@ -95,7 +95,6 @@ This will create a WireGuard configuration file with a name of your choice in th
 ```ini
 [Interface]
 PrivateKey = <fetched-private-key>
-PublicKey = <derived-public-key>
 Address = 10.5.0.2/32
 DNS = 1.1.1.1
 
