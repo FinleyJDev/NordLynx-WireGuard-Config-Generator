@@ -3,7 +3,7 @@
   Create WireGuard configuration file for NordVPN (NordLynx protocol)
 .DESCRIPTION
   Uses an existing NordVPN connection, NordVPN Access token and the WireGuard Client
-  to create a WireGuard configuration file that be used in UniFi Network
+  to create a WireGuard configuration file that can be used with the WireGuard Client or any Router supporting WireGuard.
 .NOTES
   Version:        1.0.0
   Author:         FinleyJDEV
@@ -115,7 +115,6 @@ $filePath = New-Item -path $filePath -Force
 
 $confFileContent = @"
 [Interface]
-# Public(Client)Key is normally not needed. If there are any errors remove it!
 ListenPort = $listenPort 
 PrivateKey =  $privateKey
 Address = 10.5.0.2/32
