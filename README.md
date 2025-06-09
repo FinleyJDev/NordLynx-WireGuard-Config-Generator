@@ -15,7 +15,7 @@ No need for manual API calls or external tools — just your access token and a 
 
 ## ⚙️ Requirements
 
-* Windows with PowerShell 5.1+ or PowerShell Core on Linux/macOS
+* Windows with PowerShell 5.1+ (script tested only on Windows)
 * A valid **NordVPN account**
 * Access token generated via the Nord Account dashboard
 
@@ -28,6 +28,8 @@ No need for manual API calls or external tools — just your access token and a 
 ```
 
 The script will ask you to enter your **NordVPN Linux access token** during execution.
+
+All path examples in this README use Windows-style backslashes.
 
 ---
 
