@@ -1,3 +1,5 @@
+
+
 # NordLynx WireGuard Config Generator
 
 A PowerShell script to generate a valid WireGuard configuration file from NordVPN's NordLynx protocol.
@@ -37,7 +39,7 @@ All path examples in this README use Windows-style backslashes.
 
 ### **Step 1 – Install & Configure the NordVPN Client**
 
-1. Download and install the NordVPN client for your OS.
+1. Download and install the NordVPN client for Windows.
 2. Open the client and go to **Settings > Connection**
 3. Set **VPN protocol** to `NordLynx`
 
